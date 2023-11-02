@@ -1,7 +1,7 @@
 "use client"
 
 import { Template } from '@/components/Template';
-import * as Styles from './styles'
+import * as Styles from '../../../styles/about.styles'
 import Link from "next/link";
 
 export default function About() {

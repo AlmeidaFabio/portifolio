@@ -1,6 +1,6 @@
 "use client"
 
-import * as Styles from './styles'
+import * as Styles from '../../../styles/projects.styles'
 import { ProjectGridItem } from "@/components/ProjectsGridItem";
 import { Template } from '@/components/Template';
 import { projectsData } from '@/data/projectsData';

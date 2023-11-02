@@ -1,4 +1,4 @@
-import './globals.css'
+import '../styles/globals.css'
 import type { Metadata, ResolvingMetadata } from 'next'
 
 export async function generateMetadata( parent: ResolvingMetadata): Promise<Metadata> {

@@ -1,7 +1,7 @@
 "use client"
 
 import Link from 'next/link';
-import * as Styles from './styles'
+import * as Styles from '../../../styles/education.styles'
 import { Template } from '@/components/Template';
 import { SkillsSlider } from '@/components/SkillsSlider';
 import Image from 'next/image';
@@ -19,6 +19,7 @@ export default function Education() {
                                 alt='imagem de perfil'
                                 width={200}
                                 height={200}
+                                priority
                             />
                         </div>
                         <div className="education">

@@ -58,8 +58,8 @@ export const Education = styled.section`
     background: gray;
 
     img {
-      width: 200px;
-      height: 200px;
+      width: auto;
+      height: auto;
       border-radius: 50%;
     }
   }

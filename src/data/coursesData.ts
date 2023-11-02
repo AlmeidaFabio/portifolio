@@ -26,31 +26,31 @@ export const coursesData: CourseType[] = [
         imageUrl: "/assets/imgs/coursesImages/node.png"
     },
     {
-        id: 4,
+        id: 5,
         name: "REACT",
         description: "",
         imageUrl: "/assets/imgs/coursesImages/react.png"
     },
     {
-        id: 5,
+        id: 6,
         name: "GIT",
         description: "",
         imageUrl: "/assets/imgs/coursesImages/git.png"
     },
     {
-        id: 6,
+        id: 7,
         name: "GITHUB",
         description: "",
         imageUrl: "/assets/imgs/coursesImages/github.png"
     },
     {
-        id: 7,
+        id: 8,
         name: "MYSQL",
         description: "",
         imageUrl: "/assets/imgs/coursesImages/mysql.png"
     },
     {
-        id: 8,
+        id: 9,
         name: "TYPESCRIPT",
         description: "",
         imageUrl: "/assets/imgs/coursesImages/typescript.png"

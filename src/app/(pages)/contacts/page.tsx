@@ -1,7 +1,7 @@
 "use client"
 
 import { AnimatedSocialMediaButtons } from '@/components/AnimatedSocialMediaButtons'
-import * as Styles from './styles'
+import * as Styles from '../../../styles/contacts.styles'
 import { Template } from "@/components/Template"
 import React, { useState, FormEvent } from 'react'
 
