@@ -103,6 +103,8 @@ export const Content = styled.div`
         height: 40px;
 
         a {
+            width: 120px;
+            text-align: center;
             padding: 10px;
             border-radius: 10px;
             background: #16384c;
