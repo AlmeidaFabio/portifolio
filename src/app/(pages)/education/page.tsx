@@ -31,10 +31,10 @@ export default function Education() {
                         <div className="courses">
                             <h3>Cursos</h3>
                             <p>
-                                🔸<span>Estudando desenvolvimento web desde 2019 pela plataforma de cursos online <Link href="https://b7web.com.br">B7web</Link>.</span>
+                                🔸<span>Estudando desenvolvimento web desde 2019 pela plataforma de cursos online <Link href="https://b7web.com.br" target='blank'>B7web</Link>.</span>
                             </p>
                             <p>
-                                🔸<span>Já participei de alguns cursos e bootcamps da plataforma online <Link href="https://www.dio.me/">Digital Inovation One - DIO</Link>.</span>
+                                🔸<span>Já participei de alguns cursos e bootcamps da plataforma online <Link href="https://www.dio.me/" target='blank'>Digital Inovation One - DIO</Link>.</span>
                             </p>
                             <p>
                                 🔸<span>Além de consumir vários conteúdos e tutoriais do Youtube e internet em geral.</span>
@@ -90,7 +90,9 @@ export default function Education() {
                         </div>
                     </Styles.Skills>
                 </Styles.MainArea>
-                <Styles.Button>Baixar Currículo</Styles.Button>
+                <Styles.Button>
+                    <Link href="https://drive.google.com/file/d/1MsLVY4upkKuBB-pa40osY17nKtjlp8kl/view?usp=sharing" target='blank'>Baxar Curriculo</Link>
+                </Styles.Button>
             </Styles.Container>
         </Template>
     )
