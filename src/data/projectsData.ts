@@ -22,10 +22,10 @@ export const projectsData:ProjectType[] = [
     {
         id: 3,
         name: "Portifólio",
-        description: "Meu Portifólio",
+        description: "Meu Portifólio pessoal, criado utilizando NextJs 13.5, Typescript e Styled-Components.",
         imageUrl: "/assets/imgs/projectsImages/default.gif",
-        repoUrl: "",
-        buildUrl: "", 
+        repoUrl: "https://github.com/AlmeidaFabio/portifolio",
+        buildUrl: "https://almeidafabio-portifolio.vercel.app/", 
         tags: ["React", "NextJs", "Styled-Components"],    
     },
     {
