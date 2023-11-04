@@ -58,8 +58,6 @@ export const Education = styled.section`
     background: gray;
 
     img {
-      width: auto;
-      height: auto;
       border-radius: 50%;
     }
   }

@@ -5,12 +5,13 @@ import { usePathname } from 'next/navigation'
 import { StyleSheetManager } from 'styled-components'
 
 export const Navbar = () => {
+    const pathname = usePathname()
     return (
         <Styles.NavBar>
             <ul>
                 <StyleSheetManager shouldForwardProp={(prop) => prop !== 'menu_active'}>
                     {navigationsLinksData.map((item, index) => (
-                        <Styles.MenuItem key={index} menu_active={usePathname() === item.path ? "true" : "false"}>
+                        <Styles.MenuItem key={index} menu_active={pathname === item.path ? "true" : "false"}>
                             <Link href={item.path}>
                                 {item.label}
                             </Link>

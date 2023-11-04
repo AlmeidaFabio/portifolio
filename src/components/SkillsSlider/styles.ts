@@ -59,8 +59,8 @@ export const SlideItem = styled.div`
     text-shadow: 2px 2px 3px #000000;
 
     img {
-        width: auto;
-        height: auto;
+        width: 80;
+        height: 60;
         padding: 0 10px 0 10px;       
     }
 `
