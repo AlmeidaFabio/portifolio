@@ -48,6 +48,7 @@ export const FormArea = styled.div`
         }
 
         @media (max-width: 900px) {
+            height: 100%;
             margin: auto;
         }
     }

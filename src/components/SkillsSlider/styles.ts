@@ -12,7 +12,7 @@ const slideShown = keyframes`
 
 export const Slider = styled.div`
     position: relative;
-    width: 450px;
+    width: 100%;
     height: 100px;
     border-radius: 20px;    
     background: whitesmoke;

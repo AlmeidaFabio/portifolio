@@ -4,6 +4,7 @@ export const Main = styled.main`
    width : 100%;
    height: calc(100vh - 200px);
    display: flex;
+   justify-content: center;
    color: whitesmoke;
 
    @media (max-width: 900px) {
@@ -15,9 +16,9 @@ export const Main = styled.main`
 `
 
 export const LeftSide = styled.section`
+    width: 50%;
     padding: 20px;
     display: flex;
-    flex: 1;
     flex-direction: column;
     justify-content: space-around;
 
@@ -29,42 +30,44 @@ export const LeftSide = styled.section`
     .office {
         display: flex;
         flex-direction: column;
-        font-size: 40px;
+        font-size: 3.3rem;
         font-weight: bold;
     }  
     
     .description {
-        max-width: 550px;
+        font-size: 1.2rem;
+    }
+
+    .slider-area {
+        width: 100%;
     }
 
     @media (max-width: 900px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
 
         .office {
-            font-size: 32px;
+            font-size: 2.2rem;
             align-items: center;
             margin-bottom: 20px;
-
         }
 
         .description {
-            max-width: 100%;
+            font-size: .9rem;
             margin-bottom: 20px;
         }
     }
 `
 
 export const RigthSide = styled.div`
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     max-width: 500px;
-    padding-top: 30px;
+    padding-top: 50px;
 
     @media (max-width: 900px) {
-        padding-top: 20px;
+        width: 100%;
+        padding: 20px;
         height: 600px;
         align-items: center;
     }
