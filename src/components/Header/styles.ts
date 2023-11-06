@@ -19,7 +19,7 @@ export const Header = styled.header`
     @media (max-width: 900px) {
         height: 50px;
         h1 {
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
     }
 `

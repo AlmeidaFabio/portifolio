@@ -1,26 +1,59 @@
 import styled from "styled-components"
 
-
 export const NavBar = styled.nav`
     height: 60px;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+`
+export const MenuIcon = styled.div`
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: all ease .5;
 
-    ul {
-        list-style: none;
-        display: flex;
-
-        @media (max-width: 900px) {
-            li {
-                padding: 5px;
-            }
-
-            display: none;
-        }
+    &:hover {
+        opacity: .8;
     }
 `
+
+export const Bar = styled.div`
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    transition: 0.4s;
+    background-color: whitesmoke;
+    display: none;
+
+    @media(max-width: 900px) {
+        display: block;
+    }
+`
+
+export const MenuItems = styled.ul<{ isOpen: boolean}>`
+  list-style: none;
+  display: flex;
+  padding: 0;
+  position: relative;
+
+  @media(max-width: 900px) {
+    display: ${(props) => (props.isOpen ? 'block' : 'none')};
+    top: 230%;
+    left: 5%;
+    z-index: 99;
+    background-color: #032635;
+  }
+`;
+
+
 export const MenuItem = styled.li<{ menu_active: string }>`
     margin-left: 5px;
     margin-right: 5px;
