@@ -1,4 +1,5 @@
-import { Header } from '../Header';
+import Footer from '../footer';
+import { Header } from '../header';
 import * as Styles from './styles'
 import { ReactNode } from 'react'
 
@@ -11,7 +12,7 @@ export const Template = ({ children }: Props) => {
         <Styles.Container>
             <Header />
             {children}
-            <Styles.Footer>@almeidafabio - 2023</Styles.Footer>
+            <Footer />
         </Styles.Container>
     )
 }

@@ -38,16 +38,17 @@ export const Bar = styled.div`
     }
 `
 
-export const MenuItems = styled.ul<{ isOpen: boolean}>`
+export const MenuItems = styled.ul<{ open: boolean}>`
   list-style: none;
   display: flex;
   padding: 0;
   position: relative;
 
   @media(max-width: 900px) {
-    display: ${(props) => (props.isOpen ? 'block' : 'none')};
+    width: 180px;
+    display: ${(props) => (props.open ? 'block' : 'none')};
     top: 230%;
-    left: 5%;
+    left: 2%;
     z-index: 99;
     background-color: #032635;
   }

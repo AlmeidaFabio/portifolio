@@ -7,7 +7,7 @@ export const AboutContainer = styled.div`
     padding: 0 50px;
     display: flex;
     flex-direction: column;
-    font-size: .9rem;
+    font-size: 1rem;
     text-shadow: 1px 1px 2px #000000;
 
     h2 {

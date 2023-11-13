@@ -1,4 +1,4 @@
-import { coursesData } from '../../data/coursesData'
+import { coursesData } from '../../../data/coursesData'
 import * as Styles from './styles'
 import Image from 'next/image';
 
@@ -8,7 +8,9 @@ export const SkillsSlider = () => {
             <Styles.LogosSlide>
                 {coursesData.map(course => (
                     <Styles.SlideItem key={course.id}>
-                        <Image src={course.imageUrl} alt={course.name} width={80} height={60} priority />
+                        <div className="image-area">
+                            <Image src={course.imageUrl} alt={course.name} width={70} height={60} priority />
+                        </div>
 
                         <span>{course.name}</span>
                     </Styles.SlideItem>
@@ -17,7 +19,9 @@ export const SkillsSlider = () => {
             <Styles.LogosSlide>
                 {coursesData.map(course => (
                     <Styles.SlideItem key={course.id}>
-                        <Image src={course.imageUrl} alt={course.name} width={80} height={60} priority />
+                        <div className="image-area">
+                            <Image src={course.imageUrl} alt={course.name} width={70} height={60} priority />
+                        </div>
 
                         <span>{course.name}</span>
                     </Styles.SlideItem>

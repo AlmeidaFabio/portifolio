@@ -1,10 +1,10 @@
 "use client"
 
-import * as Styles from '../styles/page.styles'
-import { SkillsSlider } from '@/components/SkillsSlider'
-import { AnimatedCard } from '@/components/AnimatedCard'
-import { Template } from '@/components/Template'
-import { AnimatedSocialMediaButtons } from '@/components/AnimatedSocialMediaButtons'
+import * as Styles from './styles/page.styles'
+import { SkillsSlider } from '@/app/components/skillsSlider'
+import { AnimatedCard } from '@/app/components/animatedCard'
+import { Template } from '@/app/components/template'
+import { AnimatedSocialMediaButtons } from '@/app/components/animatedSocialMediaButtons'
 
 const Home = () => {
   return (

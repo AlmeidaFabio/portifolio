@@ -51,16 +51,17 @@ export const LogosSlide = styled.div`
 
 export const SlideItem = styled.div`   
     width: 100px;
-    margin: 2px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2px;
+    justify-content: space-around;
+    padding: 0 2px;
     text-shadow: 2px 2px 3px #000000;
 
-    img {
-        width: 80;
-        height: 60;
-        padding: 0 10px 0 10px;       
+    .image-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 `

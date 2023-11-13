@@ -1,8 +1,8 @@
 "use client"
 
-import * as Styles from '../../../styles/projects.styles'
-import { ProjectGridItem } from "@/components/ProjectsGridItem";
-import { Template } from '@/components/Template';
+import * as Styles from '../../styles/projects.styles'
+import { ProjectGridItem } from "@/app/components/projectsGridItem";
+import { Template } from '@/app/components/template';
 import { projectsData } from '@/data/projectsData';
 
 export default function ProjectsDisplay() {

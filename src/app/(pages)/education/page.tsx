@@ -1,9 +1,9 @@
 "use client"
 
 import Link from 'next/link';
-import * as Styles from '../../../styles/education.styles'
-import { Template } from '@/components/Template';
-import { SkillsSlider } from '@/components/SkillsSlider';
+import * as Styles from '../../styles/education.styles'
+import { Template } from '@/app/components/template';
+import { SkillsSlider } from '@/app/components/skillsSlider';
 import Image from 'next/image';
 
 export default function Education() {

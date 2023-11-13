@@ -13,6 +13,7 @@ export const Navbar = () => {
     };
 
     const pathname = usePathname()
+    
     return (
         <Styles.NavBar>
             <Styles.MenuIcon onClick={toggleMenu} >
@@ -20,7 +21,7 @@ export const Navbar = () => {
                 <Styles.Bar></Styles.Bar>
                 <Styles.Bar></Styles.Bar>
             </Styles.MenuIcon>
-            <Styles.MenuItems isOpen={isOpen}>
+            <Styles.MenuItems open={isOpen}>
                 <StyleSheetManager shouldForwardProp={(prop) => prop !== 'menu_active'}>
                     {navigationsLinksData.map((item, index) => (
                         <Styles.MenuItem key={index} menu_active={pathname === item.path ? "true" : "false"}>
