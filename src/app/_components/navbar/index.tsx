@@ -15,25 +15,28 @@ export const Navbar = () => {
     };
 
     const pathname = usePathname()
-    
+
     return (
         <Styles.NavBar>
-            <Styles.MenuIcon onClick={toggleMenu} >
-                <Styles.Bar></Styles.Bar>
-                <Styles.Bar></Styles.Bar>
-                <Styles.Bar></Styles.Bar>
-            </Styles.MenuIcon>
-            <Styles.MenuItems open={isOpen}>
-                <StyleSheetManager shouldForwardProp={(prop) => prop !== 'menu_active'}>
+            <StyleSheetManager shouldForwardProp={(prop) => prop !== 'menu_active'}>
+                <Styles.MenuIcon onClick={toggleMenu}>
+                    <Styles.Bar open={isOpen}></Styles.Bar>
+                    <Styles.Bar open={isOpen}></Styles.Bar>
+                    <Styles.Bar open={isOpen}></Styles.Bar>
+                </Styles.MenuIcon>
+                <Styles.MenuItems open={isOpen} onClick={toggleMenu}>
+                    <Styles.CloseButton open={isOpen}>X</Styles.CloseButton>
                     {navigationsLinksData.map((item, index) => (
                         <Styles.MenuItem key={index} menu_active={pathname === item.path ? "true" : "false"}>
+
                             <Link href={item.path}>
                                 {item.label}
                             </Link>
                         </Styles.MenuItem>
                     ))}
-                </StyleSheetManager>
-            </Styles.MenuItems>
+                </Styles.MenuItems>
+
+            </StyleSheetManager>
         </Styles.NavBar>
     )
 }

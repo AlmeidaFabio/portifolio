@@ -3,6 +3,14 @@ import { Poppins } from "next/font/google"
 import { Header } from './_components/header'
 import Footer from './_components/footer'
 import StyledComponentsRegistry from './libs/registry'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s - Fábio Almeida',
+    default: 'Portifólio | Fábio Almeida'
+  }
+}
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] })
 interface LayoutProps {

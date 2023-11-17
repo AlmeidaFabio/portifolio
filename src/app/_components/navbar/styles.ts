@@ -1,12 +1,11 @@
 import styled from "styled-components"
 
 export const NavBar = styled.nav`
-    height: 60px;
-    border-radius: 20px;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
 `
 export const MenuIcon = styled.div`
     cursor: pointer;
@@ -25,7 +24,7 @@ export const MenuIcon = styled.div`
     }
 `
 
-export const Bar = styled.div`
+export const Bar = styled.div<{ open: boolean}>`
     width: 100%;
     height: 4px;
     background-color: #333;
@@ -34,30 +33,54 @@ export const Bar = styled.div`
     display: none;
 
     @media(max-width: 900px) {
-        display: block;
+        display: ${(props) => (props.open ? 'none' : 'block')};
+    }
+`
+
+export const CloseButton = styled.button<{ open: boolean}>`
+    display: none;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: transparent;
+    transition: all ease .5;
+
+    &:hover {
+        opacity: .8;
+    }
+
+    @media(max-width: 900px) {
+        display: ${(props) => (props.open ? 'block' : 'none')};
+        position: absolute;
+        top: 2%;
+        right: 5%;
     }
 `
 
 export const MenuItems = styled.ul<{ open: boolean}>`
   list-style: none;
   display: flex;
-  padding: 0;
-  position: relative;
+  
 
   @media(max-width: 900px) {
-    width: 180px;
+    width: 280px;
     display: ${(props) => (props.open ? 'block' : 'none')};
-    top: 230%;
-    left: 2%;
+    top: 150%;
     z-index: 99;
     background-color: #032635;
+    padding-top: 40px;
+    position: absolute;
+    top: -20%;
+    right: 0;
   }
 `;
 
 
 export const MenuItem = styled.li<{ menu_active: string }>`
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 0 5px;
     padding: 10px;
     height: 60px;
     line-height: 40px;
