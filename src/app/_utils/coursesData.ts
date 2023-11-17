@@ -1,4 +1,4 @@
-import { CourseType } from "@/types/CourseType";
+import { CourseType } from "@/app/@types/CourseType";
 
 export const coursesData: CourseType[] = [
     {

@@ -14,7 +14,8 @@ export const Slider = styled.div`
     position: relative;
     width: 100%;
     height: 100px;
-    border-radius: 20px;    
+    border-radius: 20px; 
+    padding: 10px 0;
     background: whitesmoke;
     box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
     display: flex;

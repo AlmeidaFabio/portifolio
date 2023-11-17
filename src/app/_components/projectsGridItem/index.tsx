@@ -1,4 +1,4 @@
-import { ProjectType } from '@/types/ProjectType'
+import { ProjectType } from '@/app/@types/ProjectType'
 import * as Styles from './styles'
 import Image from 'next/image';
 import Link from 'next/link';

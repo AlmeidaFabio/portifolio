@@ -1,9 +1,11 @@
+"use client"
+
 import Link from 'next/link'
 import * as Styles from './styles'
-import { navigationsLinksData } from '@/data/navigationsLinksData'
 import { usePathname } from 'next/navigation'
 import { StyleSheetManager } from 'styled-components'
 import { useState } from 'react'
+import { navigationsLinksData } from '@/app/_utils/navigationsLinksData'
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);

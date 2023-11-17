@@ -1,4 +1,4 @@
-import { ProjectType } from "@/types/ProjectType";
+import { ProjectType } from "@/app/@types/ProjectType";
 
 export const projectsData:ProjectType[] = [
     {
@@ -22,7 +22,7 @@ export const projectsData:ProjectType[] = [
     {
         id: 3,
         name: "Portifólio",
-        description: "Meu Portifólio pessoal, criado utilizando NextJs 13.5, Typescript e Styled-Components.",
+        description: "Meu Portifólio pessoal, criado utilizando NextJs, Typescript e Styled-Components.",
         imageUrl: "/assets/imgs/projectsImages/default.gif",
         repoUrl: "https://github.com/AlmeidaFabio/portifolio",
         buildUrl: "https://almeidafabio-portifolio.vercel.app/", 

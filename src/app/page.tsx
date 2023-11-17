@@ -1,15 +1,12 @@
 "use client"
 
+import { AnimatedCard } from './_components/animatedCard'
+import { AnimatedSocialMediaButtons } from './_components/animatedSocialMediaButtons'
+import { SkillsSlider } from './_components/skillsSlider'
 import * as Styles from './styles/page.styles'
-import { SkillsSlider } from '@/app/components/skillsSlider'
-import { AnimatedCard } from '@/app/components/animatedCard'
-import { Template } from '@/app/components/template'
-import { AnimatedSocialMediaButtons } from '@/app/components/animatedSocialMediaButtons'
 
 const Home = () => {
   return (
-    <Template>
-      <title>Fábio Almeida | Portifólio</title>
       <Styles.Main>
         <Styles.LeftSide>
           <div className='office'><span>Web Developer</span> <span>Full Stack</span></div>
@@ -25,7 +22,6 @@ const Home = () => {
           <AnimatedCard />
         </Styles.RigthSide>
       </Styles.Main>
-    </Template>
   )
 }
 
