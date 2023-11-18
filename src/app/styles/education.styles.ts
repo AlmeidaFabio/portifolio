@@ -47,8 +47,6 @@ export const Education = styled.section`
   flex-direction: column;
 
   .perfil-image {
-    width: 200px;
-    height: 200px;
     border-radius: 50%;
     border: 1px solid gray;
     display: flex;

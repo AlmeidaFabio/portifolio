@@ -1,6 +1,5 @@
 "use client"
 
-import { Metadata } from 'next'
 import { AnimatedCard } from './_components/animatedCard'
 import { AnimatedSocialMediaButtons } from './_components/animatedSocialMediaButtons'
 import { SkillsSlider } from './_components/skillsSlider'

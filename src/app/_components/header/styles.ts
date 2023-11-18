@@ -32,8 +32,9 @@ export const Header = styled.header`
         height: 50px;
         
         .logo {
+            width: 70%;
             h1 {
-                font-size: 1.6rem;
+                font-size: 1.4rem;
             }
         }
     }

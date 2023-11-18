@@ -33,4 +33,9 @@ export const AboutContainer = styled.div`
         margin-top: 30px;
         align-self: center;
     }
+
+    @media(max-width: 900px) {
+        padding: 0 20px;
+        font-size: .9rem;
+    }
 `

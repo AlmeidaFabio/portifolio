@@ -66,7 +66,7 @@ export const MenuItems = styled.ul<{ open: boolean}>`
   
 
   @media(max-width: 900px) {
-    width: 280px;
+    width: 240px;
     display: ${(props) => (props.open ? 'block' : 'none')};
     top: 150%;
     z-index: 99;
@@ -74,16 +74,13 @@ export const MenuItems = styled.ul<{ open: boolean}>`
     padding-top: 40px;
     position: absolute;
     top: -20%;
-    right: 0;
+    right: -5%;
   }
 `;
 
 
 export const MenuItem = styled.li<{ menu_active: string }>`
-    margin: 0 5px;
-    padding: 10px;
-    height: 60px;
-    line-height: 40px;
+    padding: 15px;
     transition: all ease .5;
 
     a {
