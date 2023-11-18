@@ -7,9 +7,12 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Fábio Almeida',
-    default: 'Portifólio | Fábio Almeida'
-  }
+    template: 'Fábio Almeida | %s',
+    default: 'Fábio Almeida - Web Developer | Portifólio',
+  },
+  description: 'Desenvolvedor Full Stack com expertise em JavaScript, Node.js e React. Explore meu portfólio para ver projetos inovadores e soluções web eficientes.',
+  keywords: ['Next.js', 'React', 'JavaScript','Desenvolvimento Web Full Stack', 'Node.js'],
+  creator: 'Fábio Almeida',
 }
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] })

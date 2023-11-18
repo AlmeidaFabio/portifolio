@@ -32,7 +32,7 @@ export default function About() {
                 Se você está em busca de um programador comprometido com o aprendizado contínuo e disposto a trabalhar duro para atingir metas, estou pronto para colaborar.
             </p>
             <p>
-                Sinta-se à vontade para entrar em <Link href="/contact">contato</Link> comigo, estou ansioso para a oportunidade de aprender e crescer junto com sua equipe.
+                Sinta-se à vontade para entrar em contato comigo, estou ansioso para a oportunidade de aprender e crescer junto com sua equipe.
             </p>
 
             <h4>Obrigado por visitar meu portifólio!</h4>
