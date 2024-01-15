@@ -33,8 +33,17 @@ export const projectsData:ProjectType[] = [
         name: "Barbers-Api",
         description: "Api para um aplicativo de agendamento de barbeiros, desenvolvida em NodeJs, utilizando Typescript, conectada a um banco de dados MYSQL, com o ORM TypeORM.",
         imageUrl: "/assets/imgs/projectsImages/default.gif",
-        repoUrl: "https://github.com/AlmeidaFabio/Node-barbers-api/tree/main",
+        repoUrl: "https://github.com/AlmeidaFabio/Node-barbers-api",
         buildUrl: "",  
         tags: ["Node", "Typescript", "Mysql", "TypeOrm"],   
+    },
+    {
+        id: 5,
+        name: "SocialMedia-Api",
+        description: "Api com funcionalidades básicas de uma rede social,tais como, postar textos ou fotos, curtir, seguir, entre outras.",
+        imageUrl: "/assets/imgs/projectsImages/default.gif",
+        repoUrl: "https://github.com/AlmeidaFabio/social-media-api",
+        buildUrl: "",  
+        tags: ["Node", "Typescript", "PostgreSql", "Prisma"],   
     },
 ]

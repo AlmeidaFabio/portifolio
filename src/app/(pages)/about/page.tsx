@@ -1,9 +1,16 @@
 "use client"
 
+import { Metadata } from 'next';
 import * as Styles from '../../styles/about.styles'
 import Link from "next/link";
 
-export default function About() {
+// export const generateMetadata = async (): Promise<Metadata> => {
+//     return {
+//         title: 'Sobre'
+//     }
+// }
+
+const About = () => {
     return (
         <Styles.AboutContainer>
             <h2>Olá, eu sou o Fábio, seja bem vindo ao meu Portifólio!</h2>
@@ -39,3 +46,5 @@ export default function About() {
         </Styles.AboutContainer>
     )
 }
+
+export default About
