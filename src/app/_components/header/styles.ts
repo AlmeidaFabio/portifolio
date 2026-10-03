@@ -2,39 +2,36 @@ import styled from "styled-components"
 
 export const Header = styled.header`
     width: 100%;
-    height: 70px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    min-height: 88px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    color: whitesmoke;
-    text-shadow: 2px 2px 4px #000000;
-    border-bottom: 1px solid gray;
+    color: var(--text);
+    border-bottom: 1px solid var(--line);
     position: relative;
 
     .logo,
     .menu {
-        width: 50%;
+        width: auto;
         height: 100%;
         display: flex;
-        justify-content: center;
         align-items: center;
     }
 
     .logo {
         h1 {
-            font-size: 2.7rem;
+            font-size: 1.2rem;
+            letter-spacing: -.04em;
         }
     }
 
     @media (max-width: 900px) {
-        height: 50px;
+        min-height: 72px;
         
         .logo {
             width: 70%;
             h1 {
-                font-size: 1.4rem;
+                font-size: 1.05rem;
             }
         }
     }

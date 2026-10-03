@@ -1,5 +1,5 @@
 export const navigationsLinksData = [
-    { label: "Home", path: '/'},
+    { label: "Início", path: '/'},
     { label: "Sobre", path: '/about'},
     { label: "Formação", path: '/education'},
     { label: "Projetos", path: '/projects'}

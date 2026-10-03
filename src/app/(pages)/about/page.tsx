@@ -1,6 +1,3 @@
-"use client"
-
-import { Metadata } from 'next';
 import * as Styles from '../../styles/about.styles'
 import Link from "next/link";
 
@@ -13,7 +10,8 @@ import Link from "next/link";
 const About = () => {
     return (
         <Styles.AboutContainer>
-            <h2>Olá, eu sou o Fábio, seja bem vindo ao meu Portifólio!</h2>
+            <span style={{ color: 'var(--accent)', fontSize: '.68rem', fontWeight: 700, letterSpacing: '.15em' }}>SOBRE MIM</span>
+            <h2>Olá, eu sou o Fábio.<br />Prazer em conhecer você.</h2>
             <p>
                 <strong>Minhas habilidades e conhecimentos incluem:</strong>
             </p>
@@ -42,7 +40,7 @@ const About = () => {
                 Sinta-se à vontade para entrar em contato comigo, estou ansioso para a oportunidade de aprender e crescer junto com sua equipe.
             </p>
 
-            <h4>Obrigado por visitar meu portifólio!</h4>
+            <h4>Obrigado por visitar meu portfólio!</h4>
         </Styles.AboutContainer>
     )
 }

@@ -19,17 +19,17 @@ export const Navbar = () => {
     return (
         <Styles.NavBar>
             <StyleSheetManager shouldForwardProp={(prop) => prop !== 'menu_active'}>
-                <Styles.MenuIcon onClick={toggleMenu}>
+                <Styles.MenuIcon type="button" aria-label={isOpen ? 'Fechar menu' : 'Abrir menu'} aria-expanded={isOpen} onClick={toggleMenu}>
                     <Styles.Bar open={isOpen}></Styles.Bar>
                     <Styles.Bar open={isOpen}></Styles.Bar>
                     <Styles.Bar open={isOpen}></Styles.Bar>
                 </Styles.MenuIcon>
-                <Styles.MenuItems open={isOpen} onClick={toggleMenu}>
-                    <Styles.CloseButton open={isOpen}>X</Styles.CloseButton>
+                <Styles.MenuItems open={isOpen} onClick={(event) => { if ((event.target as HTMLElement).closest('a')) setIsOpen(false) }}>
+                    <Styles.CloseButton type="button" aria-label="Fechar menu" open={isOpen} onClick={() => setIsOpen(false)}>×</Styles.CloseButton>
                     {navigationsLinksData.map((item, index) => (
                         <Styles.MenuItem key={index} menu_active={pathname === item.path ? "true" : "false"}>
 
-                            <Link href={item.path}>
+                            <Link href={item.path} aria-current={pathname === item.path ? 'page' : undefined}>
                                 {item.label}
                             </Link>
                         </Styles.MenuItem>

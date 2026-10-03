@@ -17,7 +17,7 @@ export const ProjectGridItem = ({ project }: Props) => {
                         alt={project.name}
                         width={260}
                         height={220}
-                        priority
+                        sizes="(max-width: 650px) 100vw, (max-width: 980px) 50vw, 33vw"
                     />
                 </Styles.ImageBox>
                 <span className='alert'>Passe o mouse para mais informações</span>
@@ -35,7 +35,8 @@ export const ProjectGridItem = ({ project }: Props) => {
                         {project.buildUrl !== '' && (
                             <Link
                                 href={project.buildUrl ? project.buildUrl : ''}
-                                target='blank'
+                                target='_blank'
+                                rel="noreferrer"
                             >
                                 Visitar
                             </Link>
@@ -43,7 +44,8 @@ export const ProjectGridItem = ({ project }: Props) => {
                         {project.repoUrl !== '' && (
                             <Link
                                 href={project.repoUrl ? project.repoUrl : ''}
-                                target='blank'
+                                target='_blank'
+                                rel="noreferrer"
                             >
                                 Ver Código
                             </Link>

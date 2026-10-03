@@ -2,16 +2,18 @@ import styled from "styled-components";
 
 export const Footer = styled.footer`
     width: 100%;
-    height: 40px;
+    min-height: 56px;
     display: flex;
     align-items: flex-end;
-    justify-content: flex-end;
-    font-size: .8rem;
-    color: gray;
+    justify-content: space-between;
+    font-size: .72rem;
+    color: #81939f;
+    border-top: 1px solid var(--line);
+    margin-top: auto;
 
     @media (max-width: 900px) {
-        height: 30px;
+        min-height: 52px;
         font-size: .7rem;
-        justify-content: center;
+        justify-content: space-between;
     }
 `

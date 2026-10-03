@@ -2,40 +2,45 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
     width: 100%;
-    min-height: calc(100vh - 240px);
-    margin-top: 50px;
-    padding: 0 50px;
+    max-width: 850px;
+    min-height: calc(100vh - 180px);
+    margin: 0 auto;
+    padding: 70px 0;
     display: flex;
     flex-direction: column;
     font-size: 1rem;
-    text-shadow: 1px 1px 2px #000000;
+    color: var(--muted);
 
     h2 {
-        align-self: center;
-        margin-bottom: 30px;
+        margin-bottom: 24px;
+        color: var(--text);
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.2;
+        letter-spacing: -.05em;
     }
 
     p {
-        margin: 10px 0;
+        margin: 12px 0;
+        max-width: 740px;
     }
 
     a {
-        text-decoration: underline;
-        font-style: italic;
-        transition: all ease .5s;
+        color: var(--accent);
+        border-bottom: 1px solid rgba(112,225,193,.35);
+        transition: color .2s ease;
 
         &:hover {
-            opacity: .6;
+            color: #b3f3e2;
         }
     }
 
     h4 {
-        margin-top: 30px;
-        align-self: center;
+        margin-top: 28px;
+        color: var(--text);
     }
 
     @media(max-width: 900px) {
-        padding: 0 20px;
+        padding: 50px 0;
         font-size: .9rem;
     }
 `

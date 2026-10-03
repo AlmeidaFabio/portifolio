@@ -7,20 +7,18 @@ export const SkillsSlider = () => {
         <Styles.Slider>
             <Styles.LogosSlide>
                 {coursesData.map(course => (
-                    <Styles.SlideItem key={course.id}>
+                    <Styles.SlideItem key={`first-${course.id}`}>
                         <div className="image-area">
-                            <Image src={course.imageUrl} alt={course.name} width={60} height={60} priority />
+                            <Image src={course.imageUrl} alt={course.name} width={44} height={44} />
                         </div>
 
                         <span>{course.name}</span>
                     </Styles.SlideItem>
                 ))}
-            </Styles.LogosSlide>
-            <Styles.LogosSlide>
                 {coursesData.map(course => (
-                    <Styles.SlideItem key={course.id}>
+                    <Styles.SlideItem key={`second-${course.id}`} aria-hidden="true">
                         <div className="image-area">
-                            <Image src={course.imageUrl} alt={course.name} width={60} height={60} priority />
+                            <Image src={course.imageUrl} alt="" width={44} height={44} />
                         </div>
 
                         <span>{course.name}</span>

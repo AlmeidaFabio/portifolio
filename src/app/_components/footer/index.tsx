@@ -1,10 +1,8 @@
-"use client"
-
 import * as Styles from './styles'
 
 const Footer = () => {
     return(
-        <Styles.Footer>@almeidafabio - 2023</Styles.Footer>
+        <Styles.Footer><span>Fábio Almeida</span><span>Feito com cuidado · {new Date().getFullYear()}</span></Styles.Footer>
     )
 }
 
